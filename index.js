@@ -3,6 +3,7 @@ var luckyno=document.querySelector("#luckyno")
 var checknumber=document.querySelector("#checknumber")
 var message=document.querySelector("#output")
 var total=0;
+
 function changinghifens(dob){
     
     dob=dob.replaceAll("-","")
@@ -28,10 +29,15 @@ function compare(sum,luckynumber){
 function isyourbdaylucky(){
     var dateofbirth=dob.value;
     var lucky=luckyno.value;
+    if(dateofbirth&&lucky){
  var amountdifference=dateofbirth-lucky;
  var date3=changinghifens(dateofbirth);
  var sum=calculatesum(amountdifference,date3);
  compare(sum,lucky)
+    }
+    else{
+        message.innerText="please give all the fields!!"
+    }
 
 
     

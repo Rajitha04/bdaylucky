@@ -3,4 +3,30 @@ body{
 }
 label{
     display: block;
+    text-align: center;
+    margin:1rem 1rem;
+    font-size: x-large;
+}
+.input{
+display: block;
+margin: auto;
+width:20vw;
+height: 6vw;
+font-size: larger;
+}
+.heading{
+    text-align: center;
+}
+.button{
+display: block;
+margin: auto;
+padding: 1rem;
+margin-top: 3rem;
+border-radius: 0.5rem;
+font-size: larger;
+}
+.result{
+font-size: x-large;
+margin:2rem 1rem;
+text-align: center;
 }
